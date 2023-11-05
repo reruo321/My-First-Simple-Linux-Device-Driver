@@ -16,6 +16,7 @@ module_param(device_type, charp, S_IRUGO);
 // Description of the Module Parameter
 MODULE_PARM_DESC(device_type, "My Virtual Keyboard");
 
+// Initialization function
 static int __init my_virtual_device_init(){
         // check if a keyboard
         if(strcmp(device_type, "keyboard") == 0){
@@ -28,7 +29,7 @@ static int __init my_virtual_device_init(){
         return 0;
 }
 
-// Cleanup and exit
+// Cleanup and exit function
 static void __exit my_virtual_device_exit(void) {
     
 }
