@@ -1,4 +1,4 @@
-include <linux/init.h>
+#include <linux/init.h>
 #include <linux/module.h>
 
 static char *device_type = "keyboard";
@@ -9,11 +9,8 @@ MODULE_LICENSE("GPL");
 MODULE_AUTHOR("reruo");
 MODULE_DESCRIPTION("My First Simple Linux Device Driver - Virtual Keyboard");
 
-// module_param(name_of_parameter_variable,
-// Recognize and interpret a charp type value for the device_type module parameter.
-// device_type=your_charp_type_argument
-// (charp: char *. Defined by the Linux kernel's module infrastructure)
-// (S_IRUGO: Allows 'R'eading by the 'U'ser, 'G'roup, and 'O'thers.)
+// module_param(name, type, perm)
+// typesafe helper for a module/cmdline parameter.
 module_param(device_type, charp, S_IRUGO);
 // Description of the Module Parameter
 MODULE_PARM_DESC(device_type, "My Virtual Keyboard");
