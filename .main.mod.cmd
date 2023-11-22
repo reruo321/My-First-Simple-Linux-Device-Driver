@@ -1,1 +1,0 @@
-cmd_/home/reruo/바탕화면/My-First-Simple-Linux-Device-Driver/main.mod := printf '%s\n'   main.o | awk '!x[$$0]++ { print("/home/reruo/바탕화면/My-First-Simple-Linux-Device-Driver/"$$0) }' > /home/reruo/바탕화면/My-First-Simple-Linux-Device-Driver/main.mod

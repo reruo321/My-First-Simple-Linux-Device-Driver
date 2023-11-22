@@ -1,1 +1,0 @@
-cmd_/home/reruo/바탕화면/My-First-Simple-Linux-Device-Driver/modules.order := {   echo /home/reruo/바탕화면/My-First-Simple-Linux-Device-Driver/reruo_vkey.o; :; } > /home/reruo/바탕화면/My-First-Simple-Linux-Device-Driver/modules.order
