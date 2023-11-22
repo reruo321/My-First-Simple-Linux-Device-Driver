@@ -19,7 +19,7 @@ static int __init my_virtual_device_init(){
 
         // Perform device initialization here
         // Register the device, perform memory allocations, etc.
-
+	pr_info("Hello, reruo virtual keyboard module!\n");
         return 0;
 }
 
@@ -27,7 +27,7 @@ module_init(my_virtual_device_init);
 
 // Step 16: Cleanup and Exit
 static void __exit my_virtual_device_exit(void) {
-
+	pr_info("Exiting reruo virtual keyboard module.\n");
 }
 
 module_exit(my_virtual_device_exit);
